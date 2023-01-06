@@ -144,11 +144,11 @@ export class NewtablecomponentComponent implements OnInit {
         case 'username':
           return this.compare(a.username, b.username, isAsc);
         case 'firstname':
-          return this.compare(a.firstname, b.firstname, isAsc);
+          return this.compare(a.name.firstname, b.name.firstname, isAsc);
         case 'password':
           return this.compare(a.password, b.password, isAsc);
-        case 'city':
-          return this.compare(a.city, b.city, isAsc);
+        // case 'city':
+        //   return this.compare(a.address.city, b.address.city, isAsc);
         default:
           return 0;
       }
