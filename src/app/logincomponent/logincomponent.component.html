@@ -1,0 +1,74 @@
+<!-- <form>
+    <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="username">
+    <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="password">
+    <input type="submit" value="Log in" (click)=Login(username,password)>
+</form>  -->
+
+<!-- <form class="form-outline mb-4">
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="">
+    </mat-form-field><br/>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+  </form> -->
+
+
+<div>
+
+
+    <div class="mt-5 p-5 text-left signincontainer">
+        <div class="row px-3">
+            <div class="col-lg-10 col-xl-9 card flex-row mx-auto shadow p-3 mb-5 bg-white rounded ">
+                <div class="d-none d-md-flex loginimage">
+                    <img src='assets/signinpic.jpg' class="float-left signinpic" alt="">
+                </div>
+                <form class="loginform-box px-3 row g-3">
+                    <div class="login-body" style="margin-top:15%; margin-left:15% ;">
+                        <h1 class="p-2 text-center">Hello, <br />Welcome to Angular App</h1>
+                        <!-- {/* <form class="loginform-box px-3 row g-3"> */}
+                        <div class="loginform-input col-12">
+
+                            {show && props.message && (
+                                <Alert variant="success" onClose={() => setShow(false)} dismissible>
+                                    {props.message}
+                                </Alert>
+                            )}
+                            {show && error && (
+                                <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+                                    {error}
+                                </Alert>
+                            )} -->
+
+                        <div class="col-12">
+                            <br />
+                            <div class="loginform-input">
+                                <!-- {/* <span className="loginiconem"><i class="fa fa-envelope-o"></i></span> */} -->
+                                <input type="email" id="username" [(ngModel)]="username" class="form-control" placeholder="Email-Address" name="email" />
+                            </div>
+                        
+
+                        <br/>
+
+                        <div class="loginform-input">
+                            <input id="password" [(ngModel)]="password"  type="password" class="form-control" placeholder="Password"
+                                name="password" />
+
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-6 mt-3 mx-auto text-center loginbtn" >
+                        <input class="btn btn-primary" style="margin-left: 5% ;margin-bottom: 75%;" type="submit" value="Login" (click)=Login(username,password) >
+                    </div>
+                    <br />
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

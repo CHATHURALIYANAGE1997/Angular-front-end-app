@@ -1,0 +1,58 @@
+
+.signinpic {
+    margin: 5px;
+    width: 500px;
+}
+.signincontainer{
+text-align: left;
+}
+h1{
+    color:#1869f5;
+}
+.loginiconem{
+    position:absolute;
+    right:365px;
+    bottom:72px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    color: black;
+    cursor:pointer;
+}
+.loginbtn{
+    
+    width:50%;
+    color:brown;
+}
+.loginiconpw{
+    position:absolute;
+    right:365px;
+    top:22px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    color: black;
+    cursor:pointer;
+}
+.pbtn{
+    position:absolute;
+    right:40px;
+    top:60px;
+    bottom:0;
+    height:100%;
+    display:flex;
+    align-items:center;
+    color: black;
+    cursor:pointer;
+}
+.loginform-input input{
+    width:100%;
+    padding-left:30px;
+}
+
+@media only screen and (max-width:700px){
+    .signinpic{
+        max-width:100%;
+        width:500px;
+    }
+}
