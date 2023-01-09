@@ -26,7 +26,7 @@
                 <div class="d-none d-md-flex loginimage">
                     <img src='assets/signinpic.jpg' class="float-left signinpic" alt="">
                 </div>
-                <form class="loginform-box px-3 row g-3">
+                <form   class="loginform-box px-3 row g-3" >
                     <div class="login-body" style="margin-top:15%; margin-left:15% ;">
                         <h1 class="p-2 text-center">Hello, <br />Welcome to Angular App</h1>
                         <!-- {/* <form class="loginform-box px-3 row g-3"> */}
@@ -42,19 +42,19 @@
                                     {error}
                                 </Alert>
                             )} -->
-
+                           
                         <div class="col-12">
                             <br />
                             <div class="loginform-input">
                                 <!-- {/* <span className="loginiconem"><i class="fa fa-envelope-o"></i></span> */} -->
-                                <input type="email" id="username" [(ngModel)]="username" class="form-control" placeholder="Email-Address" name="email" />
+                                <input type="email" id="username" required [(ngModel)]="username" class="form-control" placeholder="Email-Address" name="email" />
                             </div>
                         
 
                         <br/>
 
                         <div class="loginform-input">
-                            <input id="password" [(ngModel)]="password"  type="password" class="form-control" placeholder="Password"
+                            <input id="password" [(ngModel)]="password" required type="password" class="form-control" placeholder="Password"
                                 name="password" />
 
                         </div>
